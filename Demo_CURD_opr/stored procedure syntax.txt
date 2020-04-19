@@ -1,0 +1,10 @@
+create procedure spAddEmployee
+@Name varchar(50),
+@Gender varchar(7),
+@City varchar(100),
+@DateOfBirth datetime
+as 
+begin
+insert into tblEmployee1(Name,Gender,City,DateOfBirth) 
+values(@Name,@Gender,@City,@DateOfBirth)
+End
